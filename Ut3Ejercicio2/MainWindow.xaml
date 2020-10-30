@@ -7,12 +7,60 @@
         mc:Ignorable="d"
         Title="Equipos NBA" Height="450" Width="800"
         Icon="ut3ej2.ico">
+    <Window.Resources>
+        <Style
+            TargetType="TextBlock">
+            <Setter
+                Property="TextWrapping"
+                Value="WrapWithOverflow" />
+            <Setter
+                Property="HorizontalAlignment"
+                Value="Center" />
+            <Setter
+                Property="FontWeight"
+                Value="Bold" />
+            <Setter
+                Property="FontSize"
+                Value="30" />
+            <Setter
+                Property="FontFamily"
+                Value="Arial Black" />
+        </Style>
+        <Style
+            TargetType="WrapPanel">
+            <Setter
+                Property="HorizontalAlignment"
+                Value="Center" />
+        </Style>
+        <Style
+            TargetType="Image">
+            <Setter
+                Property="Height"
+                Value="100" />
+            <Setter
+                Property="MinWidth"
+                Value="150" />
+
+        </Style>
+        <Style
+            TargetType="Border">
+            <Setter
+                Property="Margin"
+                Value="5" />
+            <Setter
+                Property="BorderBrush"
+                Value="Black" />
+            <Setter
+                Property="BorderThickness"
+                Value="3" />
+            <Setter
+                Property="CornerRadius"
+                Value="3" />
+        </Style>
+        
+    </Window.Resources>
     <StackPanel>
-        <Border
-            Margin="5"
-            BorderBrush="Black"
-            BorderThickness="3"
-            CornerRadius="3">
+        <Border>
             <StackPanel >
                 <StackPanel.Background>
                     <LinearGradientBrush
@@ -26,36 +74,22 @@
                             Offset="1" />
                     </LinearGradientBrush>
                 </StackPanel.Background>
-                <TextBlock
-                    TextWrapping="Wrap"
-                    HorizontalAlignment="Center"
-                    FontWeight="Bold"
-                    FontSize="30"
-                    FontFamily="Arial Black">Los Ángeles Lakers</TextBlock>
-                <WrapPanel HorizontalAlignment="Center">
+                <TextBlock>Los Ángeles Lakers</TextBlock>
+                <WrapPanel>
                     <Image
-                        Height="100"
                         Source="3_lakers.png" />
                     <Image
-                        Height="100"
                         Source="14_lakers.png" />
                     <Image
-                        Height="100"
                         Source="39_lakers.png" />
                     <Image
-                        Height="100"
                         Source="9_lakers.png" />
                     <Image
-                        Height="100"
                         Source="23_lakers.png" />
                 </WrapPanel>
             </StackPanel>
         </Border>
-        <Border
-            Margin="5"
-            BorderBrush="Black"
-            BorderThickness="3"
-            CornerRadius="3">
+        <Border>
         <StackPanel >
                 <StackPanel.Background>
                     <LinearGradientBrush
@@ -72,25 +106,19 @@
                             Offset="0.017" />
                     </LinearGradientBrush>
                 </StackPanel.Background>
-                <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" FontWeight="Bold" FontSize="30"
-                    FontFamily="Arial Black"
+                <TextBlock
                     Foreground="White">Miami Heat</TextBlock>
-            <WrapPanel HorizontalAlignment="Center">
+            <WrapPanel>
                 <Image
-                    Source="13_heat.png"
-                    Height="100"/>
+                    Source="13_heat.png" />
                 <Image
-                    Source="14_heat.png"
-                    Height="100" />
+                    Source="14_heat.png"/>
                 <Image
-                    Source="22_heat.png"
-                    Height="100"/>
+                    Source="22_heat.png"/>
                 <Image
-                    Source="7_heat.png"
-                    Height="100"/>
+                    Source="7_heat.png" />
                 <Image
-                    Source="99_heat.png"
-                    Height="100"/>
+                    Source="99_heat.png" />
             </WrapPanel>
         </StackPanel>
         </Border>
