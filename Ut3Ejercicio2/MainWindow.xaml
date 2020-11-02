@@ -43,7 +43,7 @@
 
         </Style>
         <Style
-            TargetType="Border">
+            TargetType="Border" x:Key="borderStyle">
             <Setter
                 Property="Margin"
                 Value="5" />
@@ -60,7 +60,7 @@
         
     </Window.Resources>
     <StackPanel>
-        <Border>
+        <Border Style="{StaticResource borderStyle}">
             <StackPanel >
                 <StackPanel.Background>
                     <LinearGradientBrush
@@ -89,7 +89,7 @@
                 </WrapPanel>
             </StackPanel>
         </Border>
-        <Border>
+        <Border Style="{StaticResource borderStyle}">
         <StackPanel >
                 <StackPanel.Background>
                     <LinearGradientBrush
